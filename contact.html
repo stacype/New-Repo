@@ -2,87 +2,95 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>  </title>
+    <title>Reach out to us </title>
+    <link rel="stylesheet" href="css/contact.css">
 </head>
-<body>
-    <header>
-        <form>
-            <label for="firstName">First Name:</label>
-            <input id="firstName" type="text" name="firstName">
-            <label for="lastName">Last Name:</label> 
-            <input id="lastName" type="text" name="lastName">
-            
-            <input type="submit" value="Submit">
-            
-            <label for="email">Email:</label>
-            <input id="email" type="email" name="email">
-            <input type="submit" value="Save">
-            
-            <label for="yourMessage"> Your Message:</label>
-            <textarea id="yourMessage" name="yourMessage"></textarea>
-            
-            <input type="submit" value="Save">
-        </form>
-        <h1></h1>
-        <p></p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <label for="favoriteColor">What is your favorite color?</label>
-    <select id="favoriteColor" name="favoriteColor">
-        <option value="colorRed">Red</option>
-        <option value="colorBlue">Blue</option>
-        <option>Green</option>
-        <option>Yellow</option>        
-    </select>
-    <fieldset>
-        <legend>What is your favorite meal?</legend>     <!--it's the value that allows the input to be stored-->
-        <input type="radio" id="breakfast" name="favoriteMeal" value="meal1"><labelfor="breakfast">Breakfast</label>
-        <input type="radio" id="lunch" name="favoriteMeal" value="meal2"><label for="lunch">Lunch</label>
-        <input type="radio" id="dinner" name="favoriteMeal" value="meal3"><label for="dinner">Dinner</label>
-    </fieldset>
-    
-    <fieldset>
-        <legend>Which meals do you enjoy? Check all that apply</legend>     <!--it's the value that allows the input to be stored-->
-        <input type="checkbox" id="breakfast" name="favoriteMeal" value="meal1"><label for="breakfast">Breakfast</label>
-        <input type="checkbox" id="lunch" name="favoriteMeal" value="meal2"><label for="lunch">Lunch</label>
-        <input type="checkbox" id="dinner" name="favoriteMeal" value="meal3"><label for="dinner">Dinner</label>
-    </fieldset>
-    <table>  <!--table element-->
-        <thead>  <!--note the thead here-->
-            <tr>  <!--tr means table row-->
-                <th>Item</th>   <!-- th means table header-->
-                <th>Aisle</th>
-                <th>Cost</th>
-                <th>Quantity</th>
-            </tr>
-        </thead>
-        <tbody> <!--note the tbody here-->
-            <tr>
-                <td>Bread</td>  <!-- td mean table data-->
-                <td>2</td>
-                <td>$3.00</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>Milk</td>
-                <td>1</td>
-                <td>$2.50</td>
-                <td>2</td>
-            </tr>
-        </tbody>
-    </table>
-    <tfooter>
+    <body>
+        <header>
+            <h1>This is a form page where info can be input and gathered</h1>
+            <form>
+                <label for="firstName">First Name:</label>
+                <input id="firstName" type="text" name="firstName">
+                <label for="lastName">Last Name:</label> 
+                <input id="lastName" type="text" name="lastName">
+                
+                <input type="submit" value="Submit">
+                
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email">
+                <input type="submit" value="Save">
+                
+                <label for="yourMessage"> Your Message:</label>
+                <textarea id="yourMessage" name="yourMessage"></textarea>
+                
+                <input type="submit" value="Save">
+            </form>   
+        </header>
+        <label for="favoriteColor">What is your favorite color?</label>
+        <select id="favoriteColor" name="favoriteColor">
+            <option value="colorRed">Red</option>
+            <option value="colorBlue">Blue</option>
+            <option value="colorGreen">Green</option>
+            <option value="colorYellow">Yellow</option>        
+        </select>
+
+        <fieldset>
+            <legend>What is your favorite meal?</legend>     <!--it's the value that allows the input to be stored-->
+            <input type="radio" id="breakfast" name="favoriteMeal" value="meal1"><labelfor="breakfast">Breakfast</label>
+            <input type="radio" id="lunch" name="favoriteMeal" value="meal2"><label for="lunch">Lunch</label>
+            <input type="radio" id="dinner" name="favoriteMeal" value="meal3"><label for="dinner">Dinner</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Which meals do you enjoy? Check all that apply</legend>     <!--it's the value that allows the input to be stored-->
+            <input type="checkbox" id="breakfast" name="favoriteMeal" value="meal1"><label for="breakfast">Breakfast</label>
+            <input type="checkbox" id="lunch" name="favoriteMeal" value="meal2"><label for="lunch">Lunch</label>
+            <input type="checkbox" id="dinner" name="favoriteMeal" value="meal3"><label for="dinner">Dinner</label>
+        </fieldset>
+
+        <table>  <!--table element-->
+            <thead>  <!--note the thead here-->
+                <tr>  <!--tr means table row-->
+                    <th>Item</th>   <!-- th means table header-->
+                    <th>Aisle</th>
+                    <th>Cost</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody> <!--note the tbody here-->
+                <tr>
+                    <td>Bread</td>  <!-- td mean table data-->
+                    <td>2</td>
+                    <td>$3.00</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Milk</td>
+                    <td>1</td>
+                    <td>$2.50</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+        </table>
+        <tfooter>
             <tr>Total</tr>
             <tr>n/a</tr>
             <tr>$5.50</tr>
             <tr>n/a</tr>
         </tfooter>
+
+        <nav class="site-nav">
+                <ul class="group">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="extra.html">Extra</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer">
+                <p>2018 - this is my footer, size 9.</p>
+            </footer>   
     </body>
-    
+
 </html>

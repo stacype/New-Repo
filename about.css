@@ -1,0 +1,118 @@
+html {
+    background-color:#b5ccf1a9;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%;
+}
+
+.container {
+    max-width: 940px;
+    margin-left:auto;   
+    margin-right:auto;
+    background-color:rgb(252, 248, 248);
+    padding:20px 20px 10px 20px;
+    box-sizing: border-box; /*stops padding # from adding to overall width*/
+}
+/* the above auto attributes make the contents fo this container to be centered on the page */
+header {
+    color:rgb(90, 88, 88);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+header h1{
+    font-weight:normal;
+    font-size:145%;
+    margin:0;
+}
+header p{
+    margin:1;
+}
+header h2{
+    font-weight:normal;
+    font-size: 50%;
+}
+.content-area {
+    color:rgb(90, 88, 88);
+    border-top: 2px solid rgb(124, 143, 226);
+    border-bottom: 2px solid rgb(124, 143, 226);    
+}
+
+.main-area {
+    width: 65%;
+    float: left;
+    padding-right: 10px;   
+    box-sizing: border-box; 
+    /*box-sizing: border-box; fixes the layout prob padding creates*/  
+}
+/*.fix {
+    clear:both;
+} fix is not the best way to do this. use the group*/  
+/* floating creates a block boxes or columns*/
+
+.sidebar {
+    width: 35%;
+    float: right;
+    padding:20px 20px;
+    background-color:#d5e2f7a9;
+    box-sizing:border-box;
+    font-size:85%; 
+    
+}
+/*Site Navigation*/
+.site-nav {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.site-nav ul {
+    margin:0;
+    padding: 0;
+}
+.site-nav li{
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+}
+.site-nav a {
+    color:black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid rgb(207, 205, 205);
+    
+}
+.site-nav a:hover {
+    background-color:lightcyan;
+}
+
+/*End Site Navigation*/
+
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+} 
+.group:after{
+    clear:both;
+}
+.group {
+    zoom:1;
+}
+/* the above is called the Clear fix method used to clear the child floats. Keep it on a notepad file and copy and paste it into page where needed*/
+
+.footer {
+    color: rgb(161, 159, 159);   
+    text-align: center;
+    padding: 20px 20px;
+}
+a:link {
+    color: blue;
+    text-decoration: none;
+    }
+    a:visited {
+    color: purple;
+    text-decoration: none;
+    }
+    a:hover {
+    color: red;
+    text-decoration: none;
+    }

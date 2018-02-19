@@ -1,0 +1,146 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%;
+}
+img{
+    padding-left: 50px;
+    max-width: 100%;
+    height: auto;
+}
+/*image banner overlay*/
+.image-banner {
+    position:relative;
+   
+    
+}
+.image-banner img {
+    display: block;
+    
+    
+}
+.banner-description {
+    position: absolute;
+    padding-left: 20px;
+    bottom: 0px;
+    width: 118px;
+    left:50px;
+    color:white;
+    background-color:rgba(0, 0, 0, 0.459);
+}
+.container {
+    max-width:1040px;
+    margin-left: auto; /*centers entire page*/
+    margin-right: auto; /*centers entire page*/
+}
+.box-a {
+    
+    background-color: rgb(253, 246, 221);
+    padding: 20px;
+    /*margin-bottom: 0px;*/
+}
+.box-b {
+    background-color:rgba(210, 180, 140, 0.493);
+    padding: 20px;
+    /*margin-bottom: 0px;*/
+}
+/* Note; below, the padding & the border amounts are in addition to width & heigth amounts */
+.box-c {
+    padding: 20px;
+    border: 1px solid brown;
+    /* want to Center this box*/
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto; /*this and right is centering box c*/
+    margin-right:auto;
+    max-width: 700px;
+    height: 100px; 
+}
+.box-d {
+    background-color: rgb(253, 246, 221);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+/* So above width is Really 600 + 20 pad(x2) + 1 brdr(x2)
+But by adding box-sizing; border-box; where using padding & border you dont' have to do the math, browser does it for you (newer browsers) */
+h1{
+    color: rgb(221, 111, 37);
+}
+h2{
+    color: rgb(202, 105, 40);
+}
+h3{
+    color: rgba(158, 79, 27, 0.856);
+}
+h4{
+    color: rgb(133, 84, 52);
+}
+header p{
+    color:brown;
+}
+
+header p span {
+    color: rgb(153, 83, 219);
+}
+/*Site Navigation*/
+.site-nav {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.site-nav ul {
+    margin:0;
+    padding: 0;
+}
+.site-nav li{
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+}
+.site-nav a {
+    color:black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid rgb(207, 205, 205);
+    
+}
+.site-nav a:hover {
+    background-color:lightcyan;
+}
+
+/*End Site Navigation*/
+
+/* .numb1 {  
+    background-color: beige;
+} */
+
+/* footer .numb1 {
+    background-color: lightgrey;
+} */
+.footer {
+    color: rgb(161, 159, 159);   
+    text-align: center;
+    padding-top: 20px;
+}
+a:link {
+    color: blue;
+    text-decoration: none;
+    padding: 10px;
+    }
+    a:visited {
+    color: purple;
+    
+    }
+    a:hover {
+    color: red;
+    
+    }
+    .group:before,
+.group:after {
+    content:"";
+    display:table;
+} 
+.group:after{
+    clear:both;
+}
+.group {
+    zoom:1;
+}
